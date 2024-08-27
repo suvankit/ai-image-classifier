@@ -1,6 +1,6 @@
 import streamlit as st
 st.markdown('# Hello Aliens!')
-import tensorflow as tf
+
 from tensorflow import keras
 import numpy as np
 from PIL import Image, ImageOps
