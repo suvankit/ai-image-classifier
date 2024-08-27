@@ -1,7 +1,5 @@
 import streamlit as st
 st.markdown('# Hello Aliens!')
-
-from tensorflow import keras
 import numpy as np
 from PIL import Image, ImageOps
 from tensorflow.keras.models import load_model
