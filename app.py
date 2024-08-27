@@ -1,13 +1,15 @@
 import streamlit as st
+st.markdown('# Hello Aliens!')
+import tensorflow as tf
+from tensorflow import keras
 import numpy as np
 from PIL import Image, ImageOps
 from tensorflow.keras.models import load_model
 from tensorflow.keras.preprocessing.image import load_img, img_to_array
 
-st.markdown('# Hello Aliens!')
 img_size = 48
 
-model = load_model("ai_generated_model.h5")
+model = load_model("/content/ai_generated_model.h5")
 
 st.title("AI Image Classifier")       
         
@@ -27,4 +29,3 @@ if img and st.button("Check"):
         st.write("The given image is Real.")
     else:
         st.write("The given image is AI Generated.")
-    
